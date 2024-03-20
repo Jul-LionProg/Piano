@@ -54,3 +54,9 @@ body {
   padding-bottom: 1em;
   z-index: 2;
 }
+.white-key.key-pressed {
+  background-color: limegreen;
+  z-index: 1;
+  border: 0.2em outset limegreen;
+  vertical-align: bottom;
+}
