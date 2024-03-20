@@ -12,3 +12,12 @@ body {
     Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
     Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
+
+#piano-keys {
+  position: relative;
+  font-size: 1rem;
+  padding: 1em;
+  background-color: rgb(128, 128, 128);
+  display: flex;
+  text-align: center;
+}
