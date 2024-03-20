@@ -60,3 +60,18 @@ body {
   border: 0.2em outset limegreen;
   vertical-align: bottom;
 }
+.black-key {
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  width: min(8%, 2.5em);
+  height: 12em;
+  background-color: black;
+  border-width: 0 0.2em 0.75em 0.2em;
+  border-style: outset;
+  border-color: #999999;
+  color: white;
+  border-radius: 0.25em;
+  padding-top: 0.5em;
+  z-index: 4;
+}
