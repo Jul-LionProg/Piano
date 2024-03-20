@@ -75,3 +75,10 @@ body {
   padding-top: 0.5em;
   z-index: 4;
 }
+.black-key.key-pressed {
+  background-color: limegreen;
+  z-index: 3;
+  border-color: limegreen;
+  border-width: 0 0.2em 0.4em 0.2em;
+}
+.csh
