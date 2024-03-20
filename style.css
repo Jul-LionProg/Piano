@@ -81,4 +81,7 @@ body {
   border-color: limegreen;
   border-width: 0 0.2em 0.4em 0.2em;
 }
-.csh
+.csharp3 {
+  top: 1em;
+  left: min(14%, 3em);
+}
