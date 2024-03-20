@@ -21,3 +21,10 @@ body {
   display: flex;
   text-align: center;
 }
+
+.controls {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
