@@ -207,12 +207,12 @@ const start = () => {
         input_octave.value = current_octave;
         break;
       }
-    case "z": {
+     case "z": {
         if (current_octave > MIN_OCTAVE) current_octave--;
         input_octave.value = current_octave;
         break;
       }
-   case "a": {
+     case "a": {
         play_note(NOTE_N_C3);
         break;
       }
@@ -237,5 +237,9 @@ const start = () => {
       }
       case "t": {
         play_note(NOTE_N_FS3);
+        break;
+      }
+      case "g": {
+        play_note(NOTE_N_G3);
         break;
       }
