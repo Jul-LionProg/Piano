@@ -255,3 +255,8 @@ const start = () => {
         play_note(NOTE_N_AS3);
         break;
       }
+     case "j": {
+        play_note(NOTE_N_B3);
+        break;
+      }
+      defa
