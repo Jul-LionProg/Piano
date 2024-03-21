@@ -157,3 +157,5 @@ const start = () => {
     NOTE_LENGTH = v;
     console.log("new NOTE_LENGTH", NOTE_LENGTH);
   };
+  updateNoteLength();
+  input_note_length.addEventListener("change", updateNoteLength);
