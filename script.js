@@ -139,3 +139,13 @@ const start = () => {
   const gainNode = audioCtx.createGain();
   oscillator.connect(gainNode);
   gainNode.connect(audioCtx.destination);
+
+  const updateVolume = () => {
+    const v = parseFloat(input_volume.value);
+    gainNode.gain.cancelScheduledValues(audioCtx.currentTime);
+    if (v === 0) {
+      gainNode.gain.setValueAtTime(0, audioCtx.currentTime + 0.01);
+      return;
+    }
+    gainNode.gain.exponentialRampToValueAtTime(v, audioCtx.currentTime + 0.01);
+  };
