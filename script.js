@@ -228,8 +228,14 @@ const start = () => {
         play_note(NOTE_N_DS3);
         break;
       }
-     case "d": {
+      case "d": {
         play_note(NOTE_N_E3);
         break;
+      case "f": {
+        play_note(NOTE_N_F3);
+        break;
       }
-      ca
+      case "t": {
+        play_note(NOTE_N_FS3);
+        break;
+      }
