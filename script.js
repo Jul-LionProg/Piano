@@ -266,3 +266,7 @@ const start = () => {
       }
     }
   });
+  all_key_elems.forEach((e, i) => {
+    e.addEventListener("mousedown", () => {
+      document.body.dispatchEvent(get_synthetic_key_event(ALL_NOTES_KEYS[i]));
+    });
