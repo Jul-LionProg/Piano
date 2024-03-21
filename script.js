@@ -212,3 +212,7 @@ const start = () => {
         input_octave.value = current_octave;
         break;
       }
+   case "a": {
+        play_note(NOTE_N_C3);
+        break;
+      }
