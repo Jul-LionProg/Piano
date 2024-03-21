@@ -135,3 +135,7 @@ const start = () => {
   oscillator.type = "sine";
   oscillator.frequency.setValueAtTime(440, audioCtx.currentTime);
   oscillator.start();
+
+  const gainNode = audioCtx.createGain();
+  oscillator.connect(gainNode);
+  gainNode.connect(audioCtx.destination);
