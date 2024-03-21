@@ -87,3 +87,7 @@ const get_synthetic_key_event = (key, event_type = "keydown") => {
   // );
   // return keyboardEvent;
 };
+
+const start = () => {
+  const AudioContext = window.AudioContext || window.webkitAudioContext;
+  const audioCtx = new AudioContext();
