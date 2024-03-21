@@ -169,3 +169,8 @@ const start = () => {
     updateOctave();
   input_octave.addEventListener("change", updateOctave);
 
+  let last_key = "";
+  document.body.addEventListener("keyup", (event) => {
+    console.log("keyup", event.key);
+    last_key = "";
+    all_key_elems.forEach((e) => e.classList.remove(CSS_KEY_PRESSED));
