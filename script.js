@@ -178,3 +178,11 @@ const start = () => {
     // "Exponential ramps can't end at 0. Therefore there is still a tiny risk for glitches. You could avoid that by adding another linear ramp at the end. But I guess it's not necessary."
     // gainNode.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 4);
   });
+  const fade_out = (cancel = true) => {
+    console.log("fade out NOTE_LENGTH", NOTE_LENGTH);
+    if (cancel) gainNode.gain.cancelScheduledValues(audioCtx.currentTime);
+    gainNode.gain.exponentialRampToValueAtTime(
+      0.001,
+      audioCtx.currentTime + NOTE_LENGTH
+    );
+  };
