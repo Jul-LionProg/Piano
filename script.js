@@ -186,3 +186,11 @@ const start = () => {
       audioCtx.currentTime + NOTE_LENGTH
     );
   };
+ const play_note = (note) => {
+    const OCTAVE_OFFSET = (current_octave - 3) * 12;
+    const idx = (12 * 10 + note - NOTE_N_C3) % 12;
+    all_key_elems[idx].classList.add(CSS_KEY_PRESSED);
+    oscillator.frequency.setValueAtTime(
+      get_piano_freq_n(note + OCTAVE_OFFSET),
+      audioCtx.currentTime
+    );
