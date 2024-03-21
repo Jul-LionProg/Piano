@@ -39,3 +39,7 @@ const ALL_NOTES_KEYS = [
   "u",
   "j"
 ];
+
+const CSS_KEY_PRESSED = "key-pressed";
+const MIN_OCTAVE = 0;
+const MAX_OCTAVE = 8;
