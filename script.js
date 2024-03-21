@@ -243,3 +243,7 @@ const start = () => {
         play_note(NOTE_N_G3);
         break;
       }
+      case "y": {
+        play_note(NOTE_N_GS3);
+        break;
+      }
