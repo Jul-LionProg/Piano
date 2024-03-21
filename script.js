@@ -174,3 +174,7 @@ const start = () => {
     console.log("keyup", event.key);
     last_key = "";
     all_key_elems.forEach((e) => e.classList.remove(CSS_KEY_PRESSED));
+   // https://stackoverflow.com/questions/71460284/web-audio-api-clicks-crackles-pops-distortion-noise-elimination-can-i-d
+    // "Exponential ramps can't end at 0. Therefore there is still a tiny risk for glitches. You could avoid that by adding another linear ramp at the end. But I guess it's not necessary."
+    // gainNode.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 4);
+  });
