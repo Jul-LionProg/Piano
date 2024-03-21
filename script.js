@@ -92,6 +92,12 @@ const start = () => {
   const AudioContext = window.AudioContext || window.webkitAudioContext;
   const audioCtx = new AudioContext();
 
-const start = () => {
-  const AudioContext = window.AudioContext || window.webkitAudioContext;
-  const audioCtx = new AudioContext();
+  const button_start = document.querySelector("#button-start");
+  button_start.disabled = true;
+  const piano_keys = document.querySelector("#piano-keys");
+  const button_play_track = document.querySelector("#button-play-track");
+  button_play_track.disabled = false;
+  const input_octave = document.querySelector("#input-octave");
+  input_octave.disabled = false;
+  const input_note_length = document.querySelector("#input-note-length");
+  input_note_length.disabled = false;
