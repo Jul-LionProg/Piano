@@ -101,3 +101,17 @@ const start = () => {
   input_octave.disabled = false;
   const input_note_length = document.querySelector("#input-note-length");
   input_note_length.disabled = false;
+  const key_c3 = document.querySelector("#key-c3");
+  const key_cs3 = document.querySelector("#key-cs3");
+  const key_d3 = document.querySelector("#key-d3");
+  const key_ds3 = document.querySelector("#key-ds3");
+  const key_e3 = document.querySelector("#key-e3");
+  const key_f3 = document.querySelector("#key-f3");
+  const key_fs3 = document.querySelector("#key-fs3");
+  const key_g3 = document.querySelector("#key-g3");
+  const key_gs3 = document.querySelector("#key-gs3");
+  const key_a3 = document.querySelector("#key-a3");
+  const key_as3 = document.querySelector("#key-as3");
+  const key_b3 = document.querySelector("#key-b3");
+  const input_volume = document.querySelector("#input-volume");
+  input_volume.disabled = false;
