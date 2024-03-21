@@ -43,6 +43,7 @@ const ALL_NOTES_KEYS = [
 const CSS_KEY_PRESSED = "key-pressed";
 const MIN_OCTAVE = 0;
 const MAX_OCTAVE = 8;
+
 const NOTE_LETTERS = [
   "c",
   "c#",
@@ -166,7 +167,7 @@ const start = () => {
     console.log("new octave", v);
     current_octave = v;
   };
-    updateOctave();
+  updateOctave();
   input_octave.addEventListener("change", updateOctave);
 
   let last_key = "";
@@ -174,7 +175,7 @@ const start = () => {
     console.log("keyup", event.key);
     last_key = "";
     all_key_elems.forEach((e) => e.classList.remove(CSS_KEY_PRESSED));
-   // https://stackoverflow.com/questions/71460284/web-audio-api-clicks-crackles-pops-distortion-noise-elimination-can-i-d
+    // https://stackoverflow.com/questions/71460284/web-audio-api-clicks-crackles-pops-distortion-noise-elimination-can-i-d
     // "Exponential ramps can't end at 0. Therefore there is still a tiny risk for glitches. You could avoid that by adding another linear ramp at the end. But I guess it's not necessary."
     // gainNode.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 4);
   });
@@ -186,7 +187,7 @@ const start = () => {
       audioCtx.currentTime + NOTE_LENGTH
     );
   };
- const play_note = (note) => {
+  const play_note = (note) => {
     const OCTAVE_OFFSET = (current_octave - 3) * 12;
     const idx = (12 * 10 + note - NOTE_N_C3) % 12;
     all_key_elems[idx].classList.add(CSS_KEY_PRESSED);
@@ -194,7 +195,7 @@ const start = () => {
       get_piano_freq_n(note + OCTAVE_OFFSET),
       audioCtx.currentTime
     );
-   updateVolume();
+    updateVolume();
     fade_out(false);
   };
   document.body.addEventListener("keydown", (event) => {
@@ -270,3 +271,9 @@ const start = () => {
     e.addEventListener("mousedown", () => {
       document.body.dispatchEvent(get_synthetic_key_event(ALL_NOTES_KEYS[i]));
     });
+    e.addEventListener("mouseup", () => {
+      document.body.dispatchEvent(
+        get_synthetic_key_event(ALL_NOTES_KEYS[i], "keyup")
+      );
+    });
+  });
