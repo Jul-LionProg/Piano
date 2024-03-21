@@ -12,3 +12,16 @@ const NOTE_N_A3 = 37;
 const NOTE_N_AS3 = 38;
 const NOTE_N_B3 = 39;
 const ALL_NOTES = [
+  NOTE_N_C3,
+  NOTE_N_CS3,
+  NOTE_N_D3,
+  NOTE_N_DS3,
+  NOTE_N_E3,
+  NOTE_N_F3,
+  NOTE_N_FS3,
+  NOTE_N_G3,
+  NOTE_N_GS3,
+  NOTE_N_A3,
+  NOTE_N_AS3,
+  NOTE_N_B3
+];
