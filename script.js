@@ -149,3 +149,11 @@ const start = () => {
     }
     gainNode.gain.exponentialRampToValueAtTime(v, audioCtx.currentTime + 0.01);
   };
+  updateVolume();
+  input_volume.addEventListener("change", updateVolume);
+  let NOTE_LENGTH = 4;
+  const updateNoteLength = () => {
+    const v = parseFloat(input_note_length.value);
+    NOTE_LENGTH = v;
+    console.log("new NOTE_LENGTH", NOTE_LENGTH);
+  };
