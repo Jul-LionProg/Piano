@@ -259,4 +259,9 @@ const start = () => {
         play_note(NOTE_N_B3);
         break;
       }
-      defa
+      default: {
+        console.log("default branch");
+        break;
+      }
+    }
+  });
