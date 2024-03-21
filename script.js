@@ -197,3 +197,13 @@ const start = () => {
    updateVolume();
     fade_out(false);
   };
+  document.body.addEventListener("keydown", (event) => {
+    console.log("keydown", event.key);
+    if (last_key === event.key) return;
+    last_key = event.key;
+    switch (event.key) {
+      case "q": {
+        if (current_octave < MAX_OCTAVE) current_octave++;
+        input_octave.value = current_octave;
+        break;
+      }
