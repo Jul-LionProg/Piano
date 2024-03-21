@@ -166,4 +166,6 @@ const start = () => {
     console.log("new octave", v);
     current_octave = v;
   };
-  
+    updateOctave();
+  input_octave.addEventListener("change", updateOctave);
+
