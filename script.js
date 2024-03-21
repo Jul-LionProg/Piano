@@ -194,3 +194,6 @@ const start = () => {
       get_piano_freq_n(note + OCTAVE_OFFSET),
       audioCtx.currentTime
     );
+   updateVolume();
+    fade_out(false);
+  };
