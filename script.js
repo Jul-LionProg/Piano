@@ -220,3 +220,7 @@ const start = () => {
         play_note(NOTE_N_CS3);
         break;
       }
+      case "s": {
+        play_note(NOTE_N_D3);
+        break;
+      }
