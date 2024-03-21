@@ -130,3 +130,8 @@ const start = () => {
     key_as3,
     key_b3
   ];
+
+  const oscillator = audioCtx.createOscillator();
+  oscillator.type = "sine";
+  oscillator.frequency.setValueAtTime(440, audioCtx.currentTime);
+  oscillator.start();
