@@ -43,3 +43,17 @@ const ALL_NOTES_KEYS = [
 const CSS_KEY_PRESSED = "key-pressed";
 const MIN_OCTAVE = 0;
 const MAX_OCTAVE = 8;
+const NOTE_LETTERS = [
+  "c",
+  "c#",
+  "d",
+  "d#",
+  "e",
+  "f",
+  "f#",
+  "g",
+  "g#",
+  "a",
+  "a#",
+  "b"
+];
