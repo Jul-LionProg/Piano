@@ -251,3 +251,7 @@ const start = () => {
         play_note(NOTE_N_A3);
         break;
       }
+    case "u": {
+        play_note(NOTE_N_AS3);
+        break;
+      }
