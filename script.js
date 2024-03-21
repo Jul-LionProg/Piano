@@ -159,3 +159,11 @@ const start = () => {
   };
   updateNoteLength();
   input_note_length.addEventListener("change", updateNoteLength);
+
+  let current_octave = 4;
+  const updateOctave = () => {
+    const v = parseInt(input_octave.value, 10);
+    console.log("new octave", v);
+    current_octave = v;
+  };
+  
