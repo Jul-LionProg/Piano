@@ -115,3 +115,18 @@ const start = () => {
   const key_b3 = document.querySelector("#key-b3");
   const input_volume = document.querySelector("#input-volume");
   input_volume.disabled = false;
+
+  const all_key_elems = [
+    key_c3,
+    key_cs3,
+    key_d3,
+    key_ds3,
+    key_e3,
+    key_f3,
+    key_fs3,
+    key_g3,
+    key_gs3,
+    key_a3,
+    key_as3,
+    key_b3
+  ];
