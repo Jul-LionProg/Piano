@@ -57,3 +57,11 @@ const NOTE_LETTERS = [
   "a#",
   "b"
 ];
+const get_piano_freq_n = (n) => Math.pow(2, (n - 49) / 12) * 440;
+const get_piano_note_label = (n) => {
+  const octave = 2 + Math.floor((n - NOTE_N_C2) / 12);
+  // add a large multiple of 12 to avoid negatives
+  const key_in_octave = (12 * 10 + n - NOTE_N_C2) % 12;
+  // console.log("n", n, "octave", octave, key_in_octave);
+  return `${NOTE_LETTERS[key_in_octave]}${octave}`;
+};
