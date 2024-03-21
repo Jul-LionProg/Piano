@@ -65,3 +65,25 @@ const get_piano_note_label = (n) => {
   // console.log("n", n, "octave", octave, key_in_octave);
   return `${NOTE_LETTERS[key_in_octave]}${octave}`;
 };
+
+const get_synthetic_key_event = (key, event_type = "keydown") => {
+  return new KeyboardEvent(event_type, { key });
+  // const keyboardEvent = document.createEvent("KeyboardEvent");
+  // const initMethod =
+  //   typeof keyboardEvent.initKeyboardEvent !== "undefined"
+  //     ? "initKeyboardEvent"
+  //     : "initKeyEvent";
+  // keyboardEvent[initMethod](
+  //   event_type, // event type: keydown, keyup, keypress
+  //   true, // bubbles
+  //   true, // cancelable
+  //   window, // view: should be window
+  //   false, // ctrlKey
+  //   false, // altKey
+  //   false, // shiftKey
+  //   false, // metaKey
+  //   40, // keyCode: unsigned long - the virtual key code, else 0
+  //   0 // charCode: unsigned long - the Unicode character associated with the depressed key, else 0
+  // );
+  // return keyboardEvent;
+};
