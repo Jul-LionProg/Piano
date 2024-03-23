@@ -277,3 +277,10 @@ const start = () => {
       );
     });
   });
+
+  let playing = false;
+  // super mario theme, notes list courtsey of https://youtu.be/OzNhUtHutIg
+  const track = [
+    [{ note: 4, octave: 4 }],
+    [{ note: 4, octave: 4 }],
+    [],
