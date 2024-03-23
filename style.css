@@ -37,6 +37,7 @@ body {
 #button-play-track {
   padding: 1em;
 }
+
 .button-start :hover{
   background-color: rgba(255, 48, 48, 0.438);
 }
