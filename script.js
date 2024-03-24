@@ -208,6 +208,7 @@ const start = () => {
         input_octave.value = current_octave;
         break;
       }
+
       case "z": {
         if (current_octave > MIN_OCTAVE) current_octave--;
         input_octave.value = current_octave;
