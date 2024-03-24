@@ -59,6 +59,7 @@ const NOTE_LETTERS = [
   "a#",
   "b"
 ];
+
 const get_piano_freq_n = (n) => Math.pow(2, (n - 49) / 12) * 440;
 const get_piano_note_label = (n) => {
   const octave = 2 + Math.floor((n - NOTE_N_C2) / 12);
