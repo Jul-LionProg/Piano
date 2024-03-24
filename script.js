@@ -25,6 +25,7 @@ const ALL_NOTES = [
   NOTE_N_AS3,
   NOTE_N_B3
 ];
+
 const ALL_NOTES_KEYS = [
   "a",
   "w",
