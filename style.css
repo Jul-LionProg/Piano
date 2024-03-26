@@ -1,4 +1,4 @@
-* {
+7* {
   box-sizing: border-box;
 }
 
@@ -99,6 +99,7 @@ body {
   top: 1em;
   left: min(65%, 19.5em);
 }
+
 .asharp3 {
   top: 1em;
   left: min(80%, 24em);
