@@ -82,7 +82,6 @@ const get_synthetic_key_event = (key, event_type = "keydown") => {
   //   true, // cancelable
   //   window, // view: should be window
   //   false, // ctrlKey
-  
   //   false, // altKey
   //   false, // shiftKey
   //   false, // metaKey
