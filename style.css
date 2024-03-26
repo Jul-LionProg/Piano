@@ -64,6 +64,7 @@ body {
   border: 0.2em outset limegreen;
   vertical-align: bottom;
 }
+
 .black-key {
   cursor: pointer;
   user-select: none;
