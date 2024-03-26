@@ -80,6 +80,7 @@ body {
   padding-top: 0.5em;
   z-index: 4;
 }
+
 .black-key.key-pressed {
   background-color: limegreen;
   z-index: 3;
