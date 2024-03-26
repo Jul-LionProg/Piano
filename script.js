@@ -72,7 +72,6 @@ const get_piano_note_label = (n) => {
 const get_synthetic_key_event = (key, event_type = "keydown") => {
   return new KeyboardEvent(event_type, { key });
   // const keyboardEvent = document.createEvent("KeyboardEvent");
-  
   // const initMethod =
   //   typeof keyboardEvent.initKeyboardEvent !== "undefined"
   //     ? "initKeyboardEvent"
