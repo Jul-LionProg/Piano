@@ -326,7 +326,7 @@ const start = () => {
     [],
     [{ note: 4, octave: 4 }],
     [],
-   [{ note: 0, octave: 4 }],
+    [{ note: 0, octave: 4 }],
     [{ note: 2, octave: 4 }],
     [{ note: 11, octave: 3 }],
     [],
