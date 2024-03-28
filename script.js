@@ -7,7 +7,6 @@ const NOTE_N_E3 = 32;
 const NOTE_N_F3 = 33;
 const NOTE_N_FS3 = 34;
 const NOTE_N_G3 = 35;
-
 const NOTE_N_GS3 = 36;
 const NOTE_N_A3 = 37;
 const NOTE_N_AS3 = 38;
