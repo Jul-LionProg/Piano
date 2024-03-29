@@ -512,3 +512,12 @@ const start = () => {
     button_play_track.disabled = true;
     setTimeout(playTrackStep, 1);
   });
+  // setTimeout(() => {
+  //   document.body.dispatchEvent(
+  //     get_synthetic_key_event(ALL_NOTES_KEYS[i], "keyup")
+  //   );
+  // }, 10);
+  // play_note(ALL_NOTES[i]);
+  // })
+  // );
+};
