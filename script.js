@@ -489,3 +489,9 @@ const start = () => {
         );
       });
     }
+    if (trackIdx >= track.length) {
+      playing = false;
+      trackIdx = 0;
+      button_play_track.disabled = false;
+      return;
+    }
