@@ -25,7 +25,6 @@ const ALL_NOTES = [
   NOTE_N_AS3,
   NOTE_N_B3
 ];
-
 const ALL_NOTES_KEYS = [
   "a",
   "w",
@@ -59,7 +58,6 @@ const NOTE_LETTERS = [
   "a#",
   "b"
 ];
-
 const get_piano_freq_n = (n) => Math.pow(2, (n - 49) / 12) * 440;
 const get_piano_note_label = (n) => {
   const octave = 2 + Math.floor((n - NOTE_N_C2) / 12);
@@ -210,7 +208,6 @@ const start = () => {
         input_octave.value = current_octave;
         break;
       }
-
       case "z": {
         if (current_octave > MIN_OCTAVE) current_octave--;
         input_octave.value = current_octave;
@@ -369,21 +366,23 @@ const start = () => {
     [{ note: 5, octave: 4 }],
     [{ note: 3, octave: 4 }],
     [],
- [{ note: 8, octave: 3 }],
+    [{ note: 4, octave: 4 }],
+    [],
+    [{ note: 8, octave: 3 }],
     [{ note: 9, octave: 3 }],
     [{ note: 0, octave: 4 }],
     [],
-   [{ note: 9, octave: 3 }],
+    [{ note: 9, octave: 3 }],
     [{ note: 0, octave: 4 }],
     [{ note: 2, octave: 4 }],
     [],
     [],
-   [{ note: 7, octave: 4 }],
+    [{ note: 7, octave: 4 }],
     [{ note: 6, octave: 4 }],
     [{ note: 5, octave: 4 }],
     [{ note: 3, octave: 4 }],
     [],
-  [{ note: 4, octave: 4 }],
+    [{ note: 4, octave: 4 }],
     [],
     [{ note: 0, octave: 5 }],
     [],
@@ -398,7 +397,7 @@ const start = () => {
     [{ note: 5, octave: 4 }],
     [{ note: 3, octave: 4 }],
     [],
-  [{ note: 4, octave: 4 }],
+    [{ note: 4, octave: 4 }],
     [],
     [{ note: 8, octave: 3 }],
     [{ note: 9, octave: 3 }],
@@ -415,7 +414,7 @@ const start = () => {
     [{ note: 2, octave: 4 }],
     [],
     [],
-   [{ note: 0, octave: 4 }],
+    [{ note: 0, octave: 4 }],
     [],
     [],
     [],
