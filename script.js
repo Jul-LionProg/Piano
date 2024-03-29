@@ -461,3 +461,7 @@ const start = () => {
     [],
    [{ note: 4, octave: 4 }],
     [],
+  [{ note: 8, octave: 3 }],
+    [{ note: 9, octave: 3 }],
+    [{ note: 0, octave: 4 }],
+    [],
