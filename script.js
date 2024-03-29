@@ -506,3 +506,9 @@ const start = () => {
     });
     trackIdx++;
   };
+  button_play_track.addEventListener("click", () => {
+    if (playing) return;
+    playing = true;
+    button_play_track.disabled = true;
+    setTimeout(playTrackStep, 1);
+  });
