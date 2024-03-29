@@ -521,3 +521,9 @@ const start = () => {
   // })
   // );
 };
+
+const main = () => {
+  document.querySelector("#button-start").addEventListener("click", start);
+};
+
+main();
