@@ -495,3 +495,14 @@ const start = () => {
       button_play_track.disabled = false;
       return;
     }
+    setTimeout(playTrackStep, 200);
+    const currT = track[trackIdx];
+    currT.forEach((curr) => {
+      current_octave = curr.octave;
+      input_octave.value = current_octave;
+      document.body.dispatchEvent(
+        get_synthetic_key_event(ALL_NOTES_KEYS[curr.note])
+      );
+    });
+    trackIdx++;
+  };
