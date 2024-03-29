@@ -479,3 +479,13 @@ const start = () => {
     [{ note: 0, octave: 4 }]
   ];
   let trackIdx = 0;
+
+  const playTrackStep = () => {
+    if (trackIdx > 0) {
+      const lastT = track[trackIdx - 1];
+      lastT.forEach((last) => {
+        document.body.dispatchEvent(
+          get_synthetic_key_event(ALL_NOTES_KEYS[last.note], "keyup")
+        );
+      });
+    }
